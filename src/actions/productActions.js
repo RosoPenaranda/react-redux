@@ -10,7 +10,7 @@ import {
   SAVE_PRODUCT_INIT
 } from './types';
 
-import API from '../API/index.js'
+import API from '../api/index.js'
 // Actions Creator
 
 export function fetchProductsSuccess (products) {
@@ -61,7 +61,7 @@ export function fetchProducts() {
   return async((dispatch) => {
     dispatch(() => {
       return {
-        type: FETCH_PRODUCT_INIT
+        type: FETCH_PRODUCTS_INIT
       }
     });
 
@@ -78,7 +78,7 @@ export function fetchProduct() {
   return async((dispatch) => {
     dispatch(() => {
       return {
-        type: FETCH_PRODUCTS_INIT
+        type: FETCH_PRODUCT_INIT
       }
     });
 

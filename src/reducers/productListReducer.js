@@ -13,7 +13,8 @@ export default function productListReducer(state = initialState.productList, act
     case FETCH_PRODUCTS_INIT:
       return {
         ...state,
-        loading: true
+        loading: true,
+        error: null
       };
 
     case FETCH_PRODUCTS_SUCCESS:
@@ -27,6 +28,7 @@ export default function productListReducer(state = initialState.productList, act
     case FETCH_PRODUCTS_FAILURE:
       return {
         ...state,
+        products: [],
         error: action.payload,
         loading: false
       };
