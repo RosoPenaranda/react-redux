@@ -1,9 +1,9 @@
 {
   "name": "ecommerce",
   "version": "1.0.0",
-  "description": "Ecommerce app with React and Redux",
+  "description": "Ecommerce app with React and Redux, como parte del curso de react-redux de carlos azaustre",
   "main": "index.js",
-  "author": "Carlos Azaustre (https://carlosazaustre.es)",
+  "author": "Roso Peñaranda",
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server -w",
