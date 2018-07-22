@@ -17,7 +17,7 @@ const ProductList = ({
             onAddItem={onAddItem}
           />
         ))
-      }  
+      }
     </div>
   </section>
 );

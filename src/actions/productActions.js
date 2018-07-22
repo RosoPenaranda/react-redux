@@ -94,7 +94,7 @@ export function fetchProduct(productId) {
 }
 
 
-export function saveProduct() {
+export function saveProduct(product) {
   return async (dispatch) => {
     dispatch(() => {
       return {
@@ -103,7 +103,7 @@ export function saveProduct() {
     });
 
     try {
-      const data = await API.products.save(productId);
+      const data = await API.products.save(product);
       return dispatch(saveProductSuccess(data.product));
     } catch (error){
       return dispatch(saveProductFailure(error));

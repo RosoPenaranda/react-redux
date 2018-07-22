@@ -1,12 +1,9 @@
-import React, { Components, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators} from 'redux';
 
-import * as productActions from '../actions/productActions';
-import * as cartActions from '../actions/cartActions';
-import ProductDetail from './ProductDetail';
 
-class {{[nombreclase]}} extends Components {
+class {{[nombreclase]}} extends Component {
   constructor (props) {
     super (props);
   }
@@ -28,7 +25,7 @@ function mapStateToProps (state) {
 
 function mapDispatchToProps (dispatch) {
   return {
-
+    nombre_accion : bindActionCreators(acciones, dispatch)
   };
 }
 
