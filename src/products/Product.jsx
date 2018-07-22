@@ -57,10 +57,10 @@ Product.propTypes = {
   _id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   price: PropTypes.number,
-  deliveryStimate: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  deliveryStimate: PropTypes.string,
+  category: PropTypes.string,
   onAddItem: PropTypes.func.isRequired
 }
 
